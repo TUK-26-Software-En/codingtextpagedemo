@@ -27,11 +27,19 @@ public class Contest extends BaseEntity {
     private LocalDateTime startTime;
     private LocalDateTime endTime;
 
+    /** 배치 집계 완료(마감) 여부. 멱등 처리를 위해 사용. */
+    @Builder.Default
+    private boolean closed = false;
+
     public void update(String contestTitle, String contestDescription,
                        LocalDateTime startTime, LocalDateTime endTime) {
         this.contestTitle = contestTitle;
         this.contestDescription = contestDescription;
         this.startTime = startTime;
         this.endTime = endTime;
+    }
+
+    public void close() {
+        this.closed = true;
     }
 }

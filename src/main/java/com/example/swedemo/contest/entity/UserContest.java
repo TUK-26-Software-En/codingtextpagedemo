@@ -37,4 +37,15 @@ public class UserContest extends BaseEntity {
 
     @Builder.Default
     private int solvedCount = 0;
+
+    /** 배치 집계: 총점과 해결 문제 수 반영. */
+    public void applyResult(int totalScore, int solvedCount) {
+        this.totalScore = totalScore;
+        this.solvedCount = solvedCount;
+    }
+
+    /** 배치 집계: 순위 부여. */
+    public void assignRank(int rank) {
+        this.rank = rank;
+    }
 }

@@ -1,0 +1,15 @@
+# 빌드 컨텍스트에서 제외 (이미지 크기/캐시 최적화)
+.git
+.gradle
+build/
+bin/
+out/
+.idea
+.vscode
+
+# 문서는 런타임 빌드에 불필요
+docs/
+*.md
+
+# 미연결 FE 프로토타입에 섞인 외부 git worktree
+src/main/resources/templates/.claude/

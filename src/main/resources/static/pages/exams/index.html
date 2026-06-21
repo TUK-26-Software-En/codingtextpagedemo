@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWE Demo | 시험</title>
+    <link rel="stylesheet" href="../../assets/css/base.css" />
+    <link rel="stylesheet" href="../../assets/css/layout.css" />
+  </head>
+  <body>
+    <div id="app-shell"></div>
+    <main class="site-main">
+      <section class="page-head">
+        <div>
+          <h1>시험</h1>
+          <p class="page-subtitle">Exams</p>
+        </div>
+      </section>
+
+      <section class="content-grid split-view">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>시험 목록</h2>
+          </div>
+          <div id="exam-list" class="list-stack"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>상세</h2>
+          </div>
+          <div id="exam-detail"></div>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="../../assets/js/pages/exams.js"></script>
+  </body>
+</html>

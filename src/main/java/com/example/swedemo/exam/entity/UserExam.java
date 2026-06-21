@@ -36,4 +36,11 @@ public class UserExam extends BaseEntity {
     private boolean passStatus = false;
 
     private String examGrade;
+
+    /** 배치 집계: 총점/합격/등급 반영. */
+    public void applyResult(int totalScore, boolean passStatus, String examGrade) {
+        this.totalScore = totalScore;
+        this.passStatus = passStatus;
+        this.examGrade = examGrade;
+    }
 }

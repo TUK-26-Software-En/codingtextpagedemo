@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWE Demo | 제출 현황</title>
+    <link rel="stylesheet" href="../../assets/css/base.css" />
+    <link rel="stylesheet" href="../../assets/css/layout.css" />
+  </head>
+  <body>
+    <div id="app-shell"></div>
+    <main class="site-main">
+      <section class="page-head">
+        <div>
+          <h1>제출 현황</h1>
+          <p class="page-subtitle">Status</p>
+        </div>
+      </section>
+
+      <section class="panel">
+        <div class="panel-head">
+          <h2>제출 목록</h2>
+        </div>
+        <div class="table-wrap">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>제출 번호</th>
+                <th>문제</th>
+                <th>유저</th>
+                <th>언어</th>
+                <th>결과</th>
+                <th>점수</th>
+                <th>제출 시각</th>
+              </tr>
+            </thead>
+            <tbody id="submission-table-body"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="../../assets/js/pages/submissions.js"></script>
+  </body>
+</html>

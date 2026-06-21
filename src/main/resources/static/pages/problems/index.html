@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWE Demo | 문제</title>
+    <link rel="stylesheet" href="../../assets/css/base.css" />
+    <link rel="stylesheet" href="../../assets/css/layout.css" />
+  </head>
+  <body>
+    <div id="app-shell"></div>
+    <main class="site-main">
+      <section class="page-head">
+        <div>
+          <h1>문제</h1>
+          <p class="page-subtitle">Problemset</p>
+        </div>
+      </section>
+
+      <section class="content-grid problem-layout">
+        <aside class="panel panel-sticky">
+          <div class="panel-head">
+            <h2>필터</h2>
+          </div>
+          <div class="filter-form">
+            <label>
+              난이도
+              <select id="difficulty-filter"></select>
+            </label>
+            <label>
+              언어
+              <select id="language-filter"></select>
+            </label>
+            <label>
+              검색
+              <input id="keyword-filter" type="text" placeholder="문제 제목 검색" />
+            </label>
+          </div>
+        </aside>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>문제 목록</h2>
+            <span id="problem-count" class="panel-meta"></span>
+          </div>
+          <div class="table-wrap">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>번호</th>
+                  <th>제목</th>
+                  <th>난이도</th>
+                  <th>언어</th>
+                  <th>포인트</th>
+                  <th>정답률</th>
+                  <th>카테고리</th>
+                </tr>
+              </thead>
+              <tbody id="problem-table-body"></tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="../../assets/js/pages/problems.js"></script>
+  </body>
+</html>

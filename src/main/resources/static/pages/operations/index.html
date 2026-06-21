@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWE Demo | 운영</title>
+    <link rel="stylesheet" href="../../assets/css/base.css" />
+    <link rel="stylesheet" href="../../assets/css/layout.css" />
+  </head>
+  <body>
+    <div id="app-shell"></div>
+    <main class="site-main">
+      <section class="page-head">
+        <div>
+          <h1>운영</h1>
+          <p class="page-subtitle">Operations</p>
+        </div>
+      </section>
+
+      <section class="content-grid two-col">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>기관 관리</h2>
+          </div>
+          <div id="organization-board"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>감독관 관리</h2>
+          </div>
+          <div id="supervisor-board"></div>
+        </section>
+      </section>
+
+      <section class="content-grid two-col">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>대회 설정</h2>
+          </div>
+          <div id="contest-admin-table"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>시험 설정</h2>
+          </div>
+          <div id="exam-admin-table"></div>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="../../assets/js/pages/operations.js"></script>
+  </body>
+</html>

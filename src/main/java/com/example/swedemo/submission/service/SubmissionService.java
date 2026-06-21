@@ -39,7 +39,8 @@ public class SubmissionService {
         User user = userService.getById(request.getUserId());
         Problem problem = problemService.getById(request.getProblemId());
 
-        JudgeResult result = judgeService.judge(problem.getProblemId(), request.getSubmissionLanguage());
+        JudgeResult result = judgeService.judge(
+                problem.getProblemId(), request.getSubmissionLanguage(), request.getSubmittedCode());
 
         Submission submission = Submission.builder()
                 .user(user)

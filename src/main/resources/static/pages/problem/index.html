@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWE Demo | 문제 상세</title>
+    <link rel="stylesheet" href="../../assets/css/base.css" />
+    <link rel="stylesheet" href="../../assets/css/layout.css" />
+  </head>
+  <body>
+    <div id="app-shell"></div>
+    <main class="site-main">
+      <section id="problem-title-block" class="page-head"></section>
+
+      <section class="content-grid problem-detail-layout">
+        <section class="panel">
+          <div class="problem-tabs">
+            <button class="tab-button is-active" data-tab="statement">문제</button>
+            <button class="tab-button" data-tab="io">입출력</button>
+            <button class="tab-button" data-tab="submissions">최근 제출</button>
+          </div>
+
+          <div id="problem-tab-statement" class="tab-panel is-active"></div>
+          <div id="problem-tab-io" class="tab-panel"></div>
+          <div id="problem-tab-submissions" class="tab-panel"></div>
+        </section>
+
+        <aside class="panel">
+          <div class="panel-head">
+            <h2>제출</h2>
+          </div>
+          <div id="problem-submit-box"></div>
+        </aside>
+      </section>
+    </main>
+
+    <script type="module" src="../../assets/js/pages/problem.js"></script>
+  </body>
+</html>

@@ -35,3 +35,6 @@ out/
 
 ### VS Code ###
 .vscode/
+
+### 미연결 FE 프로토타입에 섞인 외부 git worktree (커밋 방지) ###
+src/main/resources/templates/.claude/

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SWE Demo</title>
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/layout.css" />
+  </head>
+  <body>
+    <div id="app-shell"></div>
+    <main class="site-main">
+      <section class="page-head">
+        <div>
+          <h1>SWE Demo</h1>
+          <p class="page-subtitle">Online Judge</p>
+        </div>
+        <div class="quick-actions">
+          <a class="btn btn-primary" href="./pages/problems/index.html">문제 풀기</a>
+          <a class="btn" href="./pages/submissions/index.html">내 제출</a>
+        </div>
+      </section>
+
+      <section class="dashboard-grid">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>요약</h2>
+          </div>
+          <div id="dashboard-summary" class="summary-grid"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>최근 공지</h2>
+          </div>
+          <div id="dashboard-notices" class="list-stack"></div>
+        </section>
+      </section>
+
+      <section class="content-grid two-col">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>진행 예정 대회</h2>
+          </div>
+          <div id="dashboard-contests" class="card-stack"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>최근 제출</h2>
+          </div>
+          <div id="dashboard-submissions"></div>
+        </section>
+      </section>
+
+      <section class="content-grid two-col">
+        <section class="panel">
+          <div class="panel-head">
+            <h2>추천 문제</h2>
+            <a href="./pages/problems/index.html">전체 보기</a>
+          </div>
+          <div id="dashboard-problems"></div>
+        </section>
+
+        <section class="panel">
+          <div class="panel-head">
+            <h2>시험 일정</h2>
+          </div>
+          <div id="dashboard-exams" class="card-stack"></div>
+        </section>
+      </section>
+    </main>
+
+    <script type="module" src="./assets/js/pages/dashboard.js"></script>
+  </body>
+</html>
